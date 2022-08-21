@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# React próbafeladat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Leírás
 
-## Available Scripts
+A feladat egy olyan weboldal elkészítése, amely egy user által megadott sudoku-t megold, vagy amennyiben megoldhatatlan, kiírja azt.
 
-In the project directory, you can run:
+A feladatot **react** frontend framework-ben készítsd el! (Typescript használható de nem elvárás)A feladatot egy általad kedvelt verziókezelő oldalra töltsd fel!A feladat kizárólag frontend fejlesztést igényel.A feladat elvégzéséhez bármilyen forrás használható. Ezeket README fájlban sorold fel!Az oldal design-ja tetszőleges, ügyelj az érthető és szép megjelenítésre!
 
-### `npm start`
+Ügyelj a helyes dokumentációra és a clean kódra!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Aloldalak**
+Landing page: Alap információk az oldalról. (Lorem ipsum)
+Egy emaill lista feliratkozás form, hogy a felhasználók emailben is megkaphassák az általuk választott nehézségi szintűfeladatot. (Backend hiánya miatt egy fake api hívás legyen a form elküldésénél, valós email feliratkozás nem szükséges) Feliratkozás után a felhasználó kapjon visszajelzést, hogy sikeres volt e a feliratkozás.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Sudoku megoldó**
 
-### `npm test`
+A felhasználó egy sudoku formájú input felületet lát, ahova felviheti a sudoku feladatot, majd egy gomb megnyomására az oldal megoldja neki azt. Amennyiben a sudoku nem megoldható, úgy hibaüzenetet jelenítsünk meg a felhasználónak.A felhasználó által beírt mezők legyenek megkülönböztethetőek a megoldás során generált mezőktől.Ha a felhasználó bezárja az oldalt, és újra megnyitja akkor töltsük neki vissza, az előzőleg beírt sudoku inputokat. Ha új feladatot szeretne megadni, egy “reset“ gomb megnyomásával ürítheti az inputmezőket.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Források
 
-### `npm run build`
+**Sudoku szabályok**: https://www.sudokuonline.io/tips/sudoku-rules
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Megoldási logika**: https://youtu.be/G_UYXzGuqvM
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Tailwind**: https://tailwindcss.com/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Mock Service Worker**: https://mswjs.io/
 
-### `npm run eject`
+**Axios**: https://axios-http.com/docs/intro
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**i18next**: https://www.i18next.com/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**React Router**: https://v5.reactrouter.com/web/guides/quick-start
